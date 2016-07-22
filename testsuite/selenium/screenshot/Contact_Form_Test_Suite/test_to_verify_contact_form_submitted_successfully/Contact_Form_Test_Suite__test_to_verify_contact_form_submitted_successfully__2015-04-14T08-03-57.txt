@@ -1,0 +1,17 @@
+Screenshot generation doesn't work.
+There is currently no active session to execute the 'currentScreenshot' command. You're probably trying to set some option in setUp() with an incorrect setter name. You may consider using setUpPage() instead.
+#0 D:\xampp\htdocs\TDD\test\selenium\lib\vendor\phpunit-selenium\PHPUnit\Extensions\Selenium2TestCase\ScreenshotListener.php(81): PHPUnit_Extensions_Selenium2TestCase->__call('currentScreensh...', Array)
+#1 D:\xampp\htdocs\TDD\test\selenium\lib\vendor\phpunit-selenium\PHPUnit\Extensions\Selenium2TestCase\ScreenshotListener.php(81): Contact_Form_Test_Suite->currentScreenshot()
+#2 D:\xampp\htdocs\TDD\test\selenium\lib\vendor\phpunit-selenium\PHPUnit\Extensions\Selenium2TestCase\ScreenshotListener.php(67): PHPUnit_Extensions_Selenium2TestCase_ScreenshotListener->storeAScreenshot(Object(Contact_Form_Test_Suite))
+#3 D:\xampp\htdocs\TDD\test\selenium\lib\Browser_Base_Test_Case.php(123): PHPUnit_Extensions_Selenium2TestCase_ScreenshotListener->addError(Object(Contact_Form_Test_Suite), Object(Exception), 1)
+#4 D:\xampp\htdocs\TDD\test\selenium\lib\Browser_Base_Test_Case.php(198): Browser_Base_Test_Case->screenshot()
+#5 phar://D:/xampp/php/phpunit/phpunit/Framework/TestResult.php(686): Browser_Base_Test_Case->runBare()
+#6 phar://D:/xampp/php/phpunit/phpunit/Framework/TestCase.php(753): PHPUnit_Framework_TestResult->run(Object(Contact_Form_Test_Suite))
+#7 phar://D:/xampp/php/phpunit/phpunit-selenium/Extensions/Selenium2TestCase.php(262): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#8 phar://D:/xampp/php/phpunit/phpunit/Framework/TestSuite.php(675): PHPUnit_Extensions_Selenium2TestCase->run(Object(PHPUnit_Framework_TestResult))
+#9 phar://D:/xampp/php/phpunit/phpunit/Framework/TestSuite.php(675): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#10 phar://D:/xampp/php/phpunit/phpunit/TextUI/TestRunner.php(426): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#11 phar://D:/xampp/php/phpunit/phpunit/TextUI/Command.php(179): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#12 phar://D:/xampp/php/phpunit/phpunit/TextUI/Command.php(132): PHPUnit_TextUI_Command->run(Array, true)
+#13 D:\xampp\php\phpunit(584): PHPUnit_TextUI_Command::main()
+#14 {main}

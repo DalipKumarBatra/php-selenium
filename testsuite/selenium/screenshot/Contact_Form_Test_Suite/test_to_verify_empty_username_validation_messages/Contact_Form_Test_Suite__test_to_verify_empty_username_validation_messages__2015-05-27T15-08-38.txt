@@ -1,0 +1,20 @@
+Screenshot generation doesn't work.
+base64_decode() expects parameter 1 to be string, array given
+#0 [internal function]: PHPUnit_Util_ErrorHandler::handleError(2, 'base64_decode()...', 'D:\xampp\php\ph...', 245, Array)
+#1 D:\xampp\php\phpunit\phpunit-selenium\PHPUnit\Extensions\Selenium2TestCase\Session.php(245): base64_decode(Array)
+#2 [internal function]: PHPUnit_Extensions_Selenium2TestCase_Session->currentScreenshot()
+#3 D:\xampp\php\phpunit\phpunit-selenium\PHPUnit\Extensions\Selenium2TestCase.php(344): call_user_func_array(Array, Array)
+#4 D:\xampp\htdocs\tddDemo\testsuite\selenium\lib\vendor\phpunit-selenium\PHPUnit\Extensions\Selenium2TestCase\ScreenshotListener.php(81): PHPUnit_Extensions_Selenium2TestCase->__call('currentScreensh...', Array)
+#5 D:\xampp\htdocs\tddDemo\testsuite\selenium\lib\vendor\phpunit-selenium\PHPUnit\Extensions\Selenium2TestCase\ScreenshotListener.php(81): Contact_Form_Test_Suite->currentScreenshot()
+#6 D:\xampp\htdocs\tddDemo\testsuite\selenium\lib\vendor\phpunit-selenium\PHPUnit\Extensions\Selenium2TestCase\ScreenshotListener.php(67): PHPUnit_Extensions_Selenium2TestCase_ScreenshotListener->storeAScreenshot(Object(Contact_Form_Test_Suite))
+#7 D:\xampp\htdocs\tddDemo\testsuite\selenium\lib\HelperFunctions.php(95): PHPUnit_Extensions_Selenium2TestCase_ScreenshotListener->addError(Object(Contact_Form_Test_Suite), Object(Exception), 1)
+#8 D:\xampp\htdocs\tddDemo\testsuite\selenium\lib\Browser_Base_Test_Case.php(122): Browser_Base_Test_Case->screenshot()
+#9 D:\xampp\php\phpunit\phpunit\src\Framework\TestResult.php(609): Browser_Base_Test_Case->runBare()
+#10 D:\xampp\php\phpunit\phpunit\src\Framework\TestCase.php(699): PHPUnit_Framework_TestResult->run(Object(Contact_Form_Test_Suite))
+#11 D:\xampp\php\phpunit\phpunit-selenium\PHPUnit\Extensions\Selenium2TestCase.php(264): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#12 D:\xampp\php\phpunit\phpunit\src\Framework\TestSuite.php(722): PHPUnit_Extensions_Selenium2TestCase->run(Object(PHPUnit_Framework_TestResult))
+#13 D:\xampp\php\phpunit\phpunit\src\TextUI\TestRunner.php(406): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#14 D:\xampp\php\phpunit\phpunit\src\TextUI\Command.php(153): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Extensions_SeleniumTestSuite), Array)
+#15 D:\xampp\php\phpunit\phpunit\src\TextUI\Command.php(105): PHPUnit_TextUI_Command->run(Array, true)
+#16 D:\xampp\php\phpunit\phpunit\phpunit(36): PHPUnit_TextUI_Command::main()
+#17 {main}
